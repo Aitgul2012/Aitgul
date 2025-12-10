@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мой сайт — Айтгүл Бакирова</title>
+  <style>
+    :root{ --accent:#4f46e5; --muted:#6b7280; --bg:#f8fafc; --card:#ffffff }
+    body{margin:0;font-family:Arial;background:#eef2ff;padding:20px;display:flex;justify-content:center}
+    .container{max-width:900px;width:100%;background:white;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);overflow:hidden}
+    header,footer{padding:20px;background:#f1f5ff}
+    main{padding:20px;display:grid;grid-template-columns:1fr 300px;gap:20px}
+    section,aside{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px}
+    ul{padding-left:20px}
+    button{padding:8px 14px;border:none;border-radius:6px;background:var(--accent);color:white;cursor:pointer}
+    @media(max-width:750px){ main{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="name">Айтгүл Бакирова</h1>
+      <p id="tagline">Ученица · Программирование, дизайн</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Обо мне</h2>
+        <p id="aboutText"></p>
+
+        <h3>Навыки</h3>
+        <ul id="skillsList"></ul>
+
+        <h3>Школа в котором я учусь</h3>
+        <p id="stats">Загрузка...</p>
+      </section>
+
+      <aside>
+        <h3>Номер</h3>
+        <p>+996706166199</p>
+        <button id="showMoreBtn">Показать больше</button>
+
+        <h4>Объект пользователя</h4>
+        <pre id="profileData"></pre>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Айтгүл Бакирова
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
